@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Escolaridade</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let c of courses" id="card">
+    <ion-card-header id="header">{{c.type}}</ion-card-header>
+    <ion-card-title id="title"><strong>{{c.name}}</strong></ion-card-title>
+    <ion-card-content>
+      <h2>{{c.academy}}</h2>
+      <br>
+      <div>Conclusão: {{c.endDate}}</div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

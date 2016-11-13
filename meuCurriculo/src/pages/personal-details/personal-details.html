@@ -1,0 +1,53 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dados Pessoais</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ 
+<ion-card>
+
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="../assets/image/close.jpg">
+    </ion-avatar>
+    <h2>{{person.name}}</h2>
+    <p>{{person.dateOfBirth}}</p>
+  </ion-item>
+
+  <img src="../assets/image/engrenagem.jpg">
+
+  <ion-card-content>
+  </ion-card-content>
+
+  <ion-grid>
+    <ion-row>
+        <ion-icon name="mail"></ion-icon>
+        <!--<strong>&nbsp; E-mail &nbsp;</strong>-->
+        <p>&nbsp; {{person.email}}</p>
+    </ion-row>
+    <ion-row>&nbsp;
+    </ion-row>
+    <ion-row>
+        <ion-icon name="call"></ion-icon>
+        <!--<strong>&nbsp; Telefone &nbsp;</strong>-->
+        <p>&nbsp; {{person.phone}}</p>
+    </ion-row>
+    <ion-row>&nbsp;
+    </ion-row>
+    <ion-row>
+        <ion-icon name="locate"></ion-icon>
+        <p>&nbsp; {{person.locale}}</p>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+</ion-content>

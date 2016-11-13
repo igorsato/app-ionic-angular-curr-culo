@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Histórico</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let w of works" id="card">
+    <ion-card-header id="header">{{w.institutionName}}</ion-card-header>
+    <ion-card-title id="title"><strong>{{w.role}}</strong></ion-card-title>
+    <ion-card-content>
+      <div>Data de Início: {{w.beginDate}}</div>
+      <div>Data de Saída: {{w.endDate}}</div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
